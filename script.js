@@ -24,7 +24,7 @@ function newQuote(){
 showLoadingSpinner();
     // pick random quote
    const quote = apiQuotes[Math.floor(Math.random()*apiQuotes.length)];
-   quoteText.textContent = quote.text;
+
 //    check if author unknown
    if(!quote.author){
 authorText.textContent = "Unkown"   
@@ -37,7 +37,7 @@ authorText.textContent = "Unkown"
    }else{
     quoteText.classList.remove('long-quote');
    }
-//    Set Quote, Hide Loader
+//   add quote, remove loader
 quoteText.textContent = quote.text;
 removeLoadingSpinner();
 }
