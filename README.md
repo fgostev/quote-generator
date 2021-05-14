@@ -1,0 +1,1 @@
+A quote generator that uses an API to generate randomly new quotes.
